@@ -1,0 +1,74 @@
+a.nav-link{
+    padding: 15px!important;
+}
+a.nav-link.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-weight: bold;
+    color: #6200ff!important;
+}
+
+.bio{
+    font-size: 25px;
+}
+
+.chef-image {
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: top, center;
+    background-size: cover;
+}
+
+.slider-image {
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.chef-image-in-detail {
+    width: 100%;
+    height: 400px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    border: 10px solid #fff;
+    transform: skew(0deg, 5deg);
+}
+
+.form{
+    width: 320px!important;
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
+
+.search-container{
+    background-image: url('/ss.jpg');
+    height: 300px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search{
+    font-size: 2rem;
+}
+
+.search-input{
+    width: 50%!important;
+}
+
+@media (max-width: 576px){
+    .search-input{
+        width: 85%!important;
+    }
+}
