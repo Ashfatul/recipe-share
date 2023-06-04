@@ -31,8 +31,7 @@ const router = createBrowserRouter([
          {
             path: "blog",
             element: <Blog />,
-            loader: () =>
-               fetch("https://recipe-share-server.vercel.app//blogs"),
+            loader: () => fetch("https://recipe-share-server.vercel.app/blogs"),
          },
          {
             path: "register",

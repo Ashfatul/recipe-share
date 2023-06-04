@@ -13,7 +13,7 @@ const ChefRecipes = () => {
    const [isRecipeError, setIsRecipeError] = useState(false);
 
    useEffect(() => {
-      fetch(`https://recipe-share-server.vercel.app//chefs/${id}`)
+      fetch(`https://recipe-share-server.vercel.app/chefs/${id}`)
          .then((res) => res.json())
          .then((res) => {
             setInfo(res);
@@ -28,7 +28,7 @@ const ChefRecipes = () => {
    }, [id]);
 
    useEffect(() => {
-      fetch(`https://recipe-share-server.vercel.app//recipes/${id}`)
+      fetch(`https://recipe-share-server.vercel.app/recipes/${id}`)
          .then((res) => res.json())
          .then((res) => {
             setRecipes(res);

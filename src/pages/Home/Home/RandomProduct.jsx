@@ -5,7 +5,7 @@ const RandomProduct = () => {
    const [latest, setLatest] = useState();
 
    useEffect(() => {
-      fetch("https://recipe-share-server.vercel.app//recipes/")
+      fetch("https://recipe-share-server.vercel.app/recipes/")
          .then((res) => res.json())
          .then((res) => setAllRecipe(res))
          .catch((e) => console.log(e));
@@ -15,7 +15,7 @@ const RandomProduct = () => {
 
    useEffect(() => {
       fetch(
-         `https://recipe-share-server.vercel.app//recipes/latest/${getRecipe}`
+         `https://recipe-share-server.vercel.app/recipes/latest/${getRecipe}`
       )
          .then((res) => res.json())
          .then((res) => setLatest(res))

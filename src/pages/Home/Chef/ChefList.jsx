@@ -8,7 +8,7 @@ const ChefList = () => {
    const [isError, setIsError] = useState(false);
 
    useEffect(() => {
-      fetch("https://recipe-share-server.vercel.app//chefs")
+      fetch("https://recipe-share-server.vercel.app/chefs")
          .then((res) => res.json())
          .then((res) => {
             setChefs(res);
