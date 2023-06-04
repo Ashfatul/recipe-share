@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ChefCard from "./ChefCard";
 import { Spinner } from "react-bootstrap";
 
